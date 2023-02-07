@@ -2,9 +2,9 @@ import React from "react";
 import "./Post.css";
 import Avatar from "@mui/material/Avatar";
 
-function Post() {
+function Post({username, caption, imageUrl}) {
   return (
-    <>
+
       <div className="post">
 
         <div className="post__header">
@@ -13,28 +13,30 @@ function Post() {
             alt="Ali"
             src="/static/images/avatar/1.jpg"
           />
-          <h3>Username</h3>
-          {/* header -> avatar + username */}
+
+          <h3>{username}</h3>
+
         </div>
 
 
 
         <img
           className="post__image"
-          src="https://parklifedc.com/wp-content/uploads/2022/10/49086603938_17de59bc78_z.jpg"
+          src={imageUrl}
+          alt=""
         ></img>
 
 
 
 
         <h4 className="post__text">
-          <strong>ThatNiggaAli: </strong> Lil Durk showed out!!!
+          <strong>{username}: </strong> {caption}
         </h4>
 
 
 
       </div>
-    </>
+
   );
 }
 
