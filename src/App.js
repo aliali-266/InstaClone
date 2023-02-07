@@ -13,10 +13,10 @@ function App() {
           />
         </div>
 
+      <Post username="ThatNiggaAli" caption="Wow, it works" imageUrl="https://parklifedc.com/wp-content/uploads/2022/10/49086603938_17de59bc78_z.jpg" />
       <Post />
-        {/* POSTS */}
-        {/* POSTS */}
-        {/* POSTS */}
+      <Post />
+      <Post />
       </div>
 
     </>
